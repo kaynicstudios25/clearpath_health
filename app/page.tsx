@@ -1,8 +1,11 @@
 import React from 'react'
+import Patients from './components/sidebar/patients'
 
 const page = () => {
   return (
-    <div>Hello World!</div>
+    <>
+      <Patients />
+    </>
   )
 }
 
