@@ -1,17 +1,6 @@
-import React from 'react'
-import Patients from './components/sidebar/patients'
-import Display from './components/display'
+"use client";
+import Dashboard from "./components/Dashboard";
 
-const page = () => {
-  return (
-    <>
-    <div className='flex flex-row'>
-      <Patients />
-      <Display />
-    </div>
-      
-    </>
-  )
+export default function Home() {
+  return <Dashboard />;
 }
-
-export default page
