@@ -8,7 +8,7 @@ const Patients = () => {
         {patients.map((p) => (
           <div
             key={p.id}
-            className="text-black p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col"
+            className="text-black p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col dark:text-white"
           >
             <h1 className='rounded-full border-2 w-12 h-fit p-2 flex items-center justify-center'>{p.init}</h1>
             <h2 className="font-bold">
