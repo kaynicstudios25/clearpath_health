@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { openrouter, OPENROUTER_AI_MODEL } from "@/lib/openrouter";
+import { openRouter, OPENROUTER_AI_MODEL } from "@/lib/openrouter";
 
 
 
 export async function POST(req: NextRequest) {
     const { message } = await req.json();
 
-    const response = await openrouter.chat.completions.create({
+    const response = await openRouter.chat.completions.create({
         model: OPENROUTER_AI_MODEL!,
         messages: [{
             role: "user",
